@@ -12,8 +12,8 @@ body
 *
 {
 	font-size: 14px;
-	line-height: 1;
-	margin: 1px;
+	line-height: 1.1;
+	margin: 0px;
 	text-align: left;
 }
 
@@ -163,6 +163,18 @@ blockquote
 h1+h2
 {
 	margin-top: 1px;
+}
+
+h1 > a[href], h2 > a[href]
+{
+	color: inherit;
+	font-weight: inherit;
+}
+
+h1 > a[href]:hover, h2 > a[href]:hover
+{
+	color: inherit;
+	text-shadow: 0 0 2px;
 }
 
 .Function { font-weight:bold; }

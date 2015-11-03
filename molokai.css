@@ -1,23 +1,9 @@
-@font-face
-{
-	font-family: "Anonymous Pro";
-	src: url("./AnonymousPro.ttf") format("ttf");
-}
-
 body
 {
-	font-family: "Anonymous Pro", monospace, "Monaco", "Courrier New";
 	color: #d0d0d0;
 	background-color: #121212;
 }
 
-*
-{
-	font-size: 14px;
-	line-height: 1;
-	margin: 1px;
-	text-align: left;
-}
 
 .constant
 {
@@ -65,6 +51,7 @@ a[href]:hover
 	color: #0069BA;
 	text-shadow: 0px 0px 2px #0090FF;
 }
+
 
 .Function { color: #87ff00; font-weight: normal;}
 .Special { color: #5fd7ff; background-color: #080808; padding-bottom: 1px; }
