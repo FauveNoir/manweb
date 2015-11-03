@@ -1,0 +1,170 @@
+@font-face
+{
+	font-family: "Anonymous Pro";
+	src: url("./AnonymousPro.ttf") format("ttf");
+}
+
+body
+{
+	font-family: "Anonymous Pro", monospace, "Monaco", "Courrier New";
+}
+
+*
+{
+	font-size: 14px;
+	line-height: 1;
+	margin: 1px;
+	text-align: left;
+}
+
+.constant
+{
+	font-weight: bold;
+}
+
+var
+{
+	text-decoration: underline;
+	text-transform: uppercase;
+	font-style: normal;
+}
+
+.externalCommand
+{
+	font-weight: bold;
+}
+
+h1
+{
+	font-weight: bold;
+	margin-top: 1em;
+	text-transform: uppercase;
+}
+
+h2, h3, h4, h5, h6
+{
+	margin-top: 1em;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-left: 3em;
+}
+
+p, dl, ol, ul, pre
+{
+	margin-left: 5em;
+}
+
+pre
+{
+	white-space: -moz-pre-discard-newlines;
+}
+
+ul
+{
+	list-style: none;
+	padding-left: 0;
+}
+
+ul li:before
+{
+	content: ".";
+	margin-right: 4em
+}
+
+
+p
+{
+	margin-bottom: 1em;
+}
+
+nav
+{
+	margin-bottom: 4em;
+}
+
+a[href]
+{
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a[href]:hover
+{
+	font-weight: bold;
+}
+
+dd
+{
+	margin-left: 4em;
+}
+
+nav > div
+{
+	position: absolute;
+	display: inline;
+}
+
+nav > div:first-of-type
+{
+	top: 0px;
+	left: 0px;
+	text-align: left;
+}
+
+nav > div:last-of-type
+{
+	top: 0px;
+	right: 0px;
+	text-align: right;
+}
+
+nav > div:nth-of-type(2)
+{
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	text-align: center;
+}
+
+footer
+{
+	margin-top: 3em;
+	text-align: center;
+}
+
+footer > div
+{
+	display: inline-block;
+	width: 32%;
+}
+
+footer > div:first-of-type
+{
+	text-align: left;
+}
+
+footer > div:last-of-type
+{
+	text-align: right;
+}
+
+footer > div:nth-of-type(2)
+{
+	text-align: center;
+}
+
+blockquote
+{
+	margin-left: 2em;
+	margin-bottom: 1em;
+}
+
+h1+h2
+{
+	margin-top: 1px;
+}
+
+.Function { font-weight:bold; }
+.Type { font-weight:bold; }
+.String { font-style: italic; }

@@ -1,0 +1,19 @@
+body
+{
+	background-color: #000084;
+}
+
+*, a[href], .constant, .externalCommand
+{
+	color: #BBB;
+}
+
+h1, nav
+{
+	color: #FEFE54;
+}
+
+h2, h3, h4, h5, h6
+{
+	color: #00A0A0;
+}

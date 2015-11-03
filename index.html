@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Fauve">
+    <link rel="shortcut icon" href="/favicon.png">
+
+    <title>manweb — Web framework witch display webpage like a nice unix manpage</title>
+
+    <link href="./default.css" rel="stylesheet">
+    <link href="./molokai.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav>
+      <div>
+      manweb(3)
+      </div>
+      <div>
+      Web Framework
+      </div>
+      <div>
+      manweb
+      </div>
+    </nav>
+    <article>
+    <h1>Name</h1>
+    <p>
+    manweb — Web framework witch display webpage like a nice unix manpage
+    </p>
+
+    <h1>Synopsys</h1>
+       <pre>
+</span><span class="Function">&lt;</span><span class="Statement">link</span><span class="Function"> </span><span class="Type">href</span><span class="Function">=</span><span class="String">&quot;./default.css&quot;</span><span class="Function"> </span><span class="Type">rel</span><span class="Function">=</span><span class="String">&quot;stylesheet&quot;</span><span class="Function">&gt;</span><br />
+       </pre>
+
+       <pre>
+</span><span class="Function">&lt;</span><span class="Statement">link</span><span class="Function"> </span><span class="Type">href</span><span class="Function">=</span><span class="String">&quot;./default.css&quot;</span><span class="Function"> </span><span class="Type">rel</span><span class="Function">=</span><span class="String">&quot;stylesheet&quot;</span><span class="Function">&gt;</span><br />
+</span><span class="Function">&lt;</span><span class="Statement">link</span><span class="Function"> </span><span class="Type">href</span><span class="Function">=</span><span class="String">&quot;./<var>colorsheme</var>.css&quot;</span><span class="Function"> </span><span class="Type">rel</span><span class="Function">=</span><span class="String">&quot;stylesheet&quot;</span><span class="Function">&gt;</span>
+       </pre>
+
+    <h1>Description</h1>
+    <p>
+    <span class="constant">manweb</span> is framework wich give to website a nice apparence of à UNIX manual displayed with a pager like <span class="externalCommand">less(1)</span> or <span class="externalCommand">more(1)</span>. So, it will be nice to use as home page for UNIX oriented project, especially terminal programs but it also could be used for serious technical documentation, because it’s distraction free.
+    </p>
+
+    <h1>Usage</h1>
+    <p>
+    The most minimal code you have to put is:
+    </p>
+    <blockquote>
+      <pre>
+</span><span class="Function">&lt;</span><span class="Statement">link</span><span class="Function"> </span><span class="Type">href</span><span class="Function">=</span><span class="String">&quot;./default.css&quot;</span><span class="Function"> </span><span class="Type">rel</span><span class="Function">=</span><span class="String">&quot;stylesheet&quot;</span><span class="Function">&gt;</span><br /><!--
+   --></pre>
+    </blockquote>
+
+    <p>
+    This bring a simple style with just a white background and black text with no other color.
+    </p>
+
+    <p>
+    In addition, you can ad under this first line a second colorsheme deffinition
+    </p>
+    <blockquote>
+       <pre>
+</span><span class="Function">&lt;</span><span class="Statement">link</span><span class="Function"> </span><span class="Type">href</span><span class="Function">=</span><span class="String">&quot;./default.css&quot;</span><span class="Function"> </span><span class="Type">rel</span><span class="Function">=</span><span class="String">&quot;stylesheet&quot;</span><span class="Function">&gt;</span><br />
+</span><span class="Function">&lt;</span><span class="Statement">link</span><span class="Function"> </span><span class="Type">href</span><span class="Function">=</span><span class="String">&quot;./<var>colorsheme</var>.css&quot;</span><span class="Function"> </span><span class="Type">rel</span><span class="Function">=</span><span class="String">&quot;stylesheet&quot;</span><span class="Function">&gt;</span><!--
+    --></pre>
+    </blockquote>
+
+    <p>
+    Where <var>colorsheme</var> is the name of the choosen colorsheme. But becarrefull, you have to always put the <var>colorsheme</var>’s stylesheet after the default one.
+    </p>
+
+    <h1>Elements</h1>
+    <h2>Basic Tags</h2>
+    <dl>
+      <dt>
+      <span class="Function">&lt;</span><span class="Statement">h1</span><span class="Function">&gt;</span> to <span class="Function">&lt;</span><span class="Statement">h6</span><span class="Function">&gt;</span>
+      </dt>
+      <dd>
+      
+      </dd>
+
+      <dt>
+      <span class="Function">&lt;</span><span class="Statement">p</span><span class="Function">&gt;</span>
+      </dt>
+      <dd>
+      
+      </dd>
+
+      <dt>
+      <span class="Function">&lt;</span><span class="Statement">a</span><span class="Function">&gt;</span>
+      </dt>
+      <dd>
+      
+      </dd>
+
+      <dt>
+      <span class="Function">&lt;</span><span class="Statement">ul</span><span class="Function">&gt;</span>
+      </dt>
+      <dd>
+      
+      </dd>
+
+      <dt>
+      <span class="Function">&lt;</span><span class="Statement">ol</span><span class="Function">&gt;</span>
+      </dt>
+      <dd>
+      
+      </dd>
+
+      <dt>
+      <span class="Function">&lt;</span><span class="Statement">li</span><span class="Function">&gt;</span>
+      </dt>
+      <dd>
+      
+      </dd>
+
+      <dt>
+      <span class="Function">&lt;</span><span class="Statement">dl</span><span class="Function">&gt;</span>
+      </dt>
+      <dd>
+      
+      </dd>
+
+      <dt>
+      <span class="Function">&lt;</span><span class="Statement">dt</span><span class="Function">&gt;</span>
+      </dt>
+      <dd>
+      
+      </dd>
+
+      <dt>
+      <span class="Function">&lt;</span><span class="Statement">dd</span><span class="Function">&gt;</span>
+      </dt>
+      <dd>
+      
+      </dd>
+
+    </dl>
+    <h2>Formating</h2>
+    <dl>
+      <dt>
+      <span class="Function">&lt;</span><span class="Statement">acronym</span><span class="Function">&gt;</span>
+      </dt>
+      <dd>
+      
+      </dd>
+
+      <dt>
+      <span class="Function">&lt;</span><span class="Statement">abbr</span><span class="Function">&gt;</span>
+      </dt>
+      <dd>
+      
+      </dd>
+
+      <dt>
+      <span class="Function">&lt;</span><span class="Statement">address</span><span class="Function">&gt;</span>
+      </dt>
+      <dd>
+      
+      </dd>
+
+      <dt>
+      <span class="Function">&lt;</span><span class="Statement">b</span><span class="Function">&gt;</span>
+      </dt>
+      <dd>
+      
+      </dd>
+
+      <dt>
+      <span class="Function">&lt;</span><span class="Statement">blockquote</span><span class="Function">&gt;</span>
+      </dt>
+      <dd>
+      
+      </dd>
+
+      <dt>
+      <span class="Function">&lt;</span><span class="Statement">cite</span><span class="Function">&gt;</span>
+      </dt>
+      <dd>
+      
+      </dd>
+
+      <dt>
+      <span class="Function">&lt;</span><span class="Statement">code</span><span class="Function">&gt;</span>
+      </dt>
+      <dd>
+      
+      </dd>
+
+      <dt>
+      <span class="Function">&lt;</span><span class="Statement">del</span><span class="Function">&gt;</span>
+      </dt>
+      <dd>
+      
+      </dd>
+
+      <dt>
+      <span class="Function">&lt;</span><span class="Statement">em</span><span class="Function">&gt;</span>
+      </dt>
+      <dd>
+      
+      </dd>
+
+      <dt>
+      <span class="Function">&lt;</span><span class="Statement">i</span><span class="Function">&gt;</span>
+      </dt>
+      <dd>
+      
+      </dd>
+
+      <dt>
+      <span class="Function">&lt;</span><span class="Statement">ins</span><span class="Function">&gt;</span>
+      </dt>
+      <dd>
+      
+      </dd>
+
+      <dt>
+      <span class="Function">&lt;</span><span class="Statement">kbd</span><span class="Function">&gt;</span>
+      </dt>
+      <dd>
+      
+      </dd>
+
+      <dt>
+      <span class="Function">&lt;</span><span class="Statement">pre</span><span class="Function">&gt;</span>
+      </dt>
+      <dd>
+      
+      </dd>
+
+      <dt>
+      <span class="Function">&lt;</span><span class="Statement">q</span><span class="Function">&gt;</span>
+      </dt>
+      <dd>
+      
+      </dd>
+
+      <dt>
+      <span class="Function">&lt;</span><span class="Statement">s</span><span class="Function">&gt;</span>
+      </dt>
+      <dd>
+      
+      </dd>
+
+      <dt>
+      <span class="Function">&lt;</span><span class="Statement">samp</span><span class="Function">&gt;</span>
+      </dt>
+      <dd>
+      
+      </dd>
+
+      <dt>
+      <span class="Function">&lt;</span><span class="Statement">strong</span><span class="Function">&gt;</span>
+      </dt>
+      <dd>
+      
+      </dd>
+
+      <dt>
+      <span class="Function">&lt;</span><span class="Statement">tt</span><span class="Function">&gt;</span>
+      </dt>
+      <dd>
+      
+      </dd>
+
+      <dt>
+      <span class="Function">&lt;</span><span class="Statement">u</span><span class="Function">&gt;</span>
+      </dt>
+      <dd>
+      
+      </dd>
+
+    </dl>
+    <h2>Form/Table</h2>
+    <p>
+      TODO
+    </p>
+
+    <h1>Colorsheme</h1>
+
+    <h1>See also</h1>
+    <p>
+    <span class="externalCommand">BOOTSTRA.386(3)</span> at <a href="https://kristopolous.github.io/BOOTSTRA.386/">&lt;https://kristopolous.github.io/BOOTSTRA.386/&gt;</a>
+    </p>
+
+    <h1>Author</h1>
+    <p>
+    The mayor part of <span>manweb</span> is writen by Fauve (aka Idriss al Idrissi) <a href="http://taniere.info">&lt;http://taniere.info&gt;</a> and could be find in Github at <a href="https://github.com/FauveNoir/manweb/">&lt;https://github.com/FauveNoir/manweb/&gt;</a>.
+    </p>
+    </article>
+    <footer>
+      <div>
+      Web Programmer’s Manual
+      </div>
+      <div>
+      2015-11-02
+      </div>
+      <div class="externalCommand">
+      manweb(3)
+      </div>
+    </footer>
+  </body>
+</html>

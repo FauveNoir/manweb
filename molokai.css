@@ -1,0 +1,79 @@
+@font-face
+{
+	font-family: "Anonymous Pro";
+	src: url("./AnonymousPro.ttf") format("ttf");
+}
+
+body
+{
+	font-family: "Anonymous Pro", monospace, "Monaco", "Courrier New";
+	color: #d0d0d0;
+	background-color: #121212;
+}
+
+*
+{
+	font-size: 14px;
+	line-height: 1;
+	margin: 1px;
+	text-align: left;
+}
+
+.constant
+{
+	color: #af5fff;
+}
+
+var
+{
+	text-decoration: underline;
+	text-transform: uppercase;
+	font-style: normal;
+}
+
+.externalCommand
+{
+	font-weight: normal;
+	color: #87ff00;
+}
+
+h1
+{
+	color: #d7005f;
+}
+
+h2, h3, h4, h5, h6
+{
+	font-weight: normal;
+	color: #87ff00;
+}
+
+nav
+{
+	color: #d75f00;
+}
+
+a[href]
+{
+	font-weight: normal;
+	color: #007EDF;
+	transition: text-shadow 0.5s ease 0s;
+}
+
+a[href]:hover
+{
+	color: #0069BA;
+	text-shadow: 0px 0px 2px #0090FF;
+}
+
+.Function { color: #87ff00; font-weight: normal;}
+.Special { color: #5fd7ff; background-color: #080808; padding-bottom: 1px; }
+.Comment { color: #5f5f5f; }
+.Underlined { color: #808080; text-decoration: underline; }
+.LineNr { color: #bcbcbc; background-color: #1c1c1c; padding-bottom: 1px; }
+.Title { color: #d75f00; }
+.Statement { color: #d7005f; font-weight: bold; }
+.PreProc { color: #87ff00; }
+.Type { color: #5fd7ff; font-weight: normal;}
+.Identifier { color: #ff8700; font-weight: bold; }
+.String { font-style: normal; color: #afaf87; }
