@@ -41,12 +41,12 @@
 
     <h1><a name="description"></a><a href="#description">Description</a></h1>
     <p>
-    <span class="constant">manweb</span> is framework wich give to website a nice apparence of à UNIX manual displayed with a pager like <span class="externalCommand">less(1)</span> or <span class="externalCommand">more(1)</span>. So, it will be nice to use as home page for UNIX oriented project, especially terminal programs but it also could be used for serious technical documentation, because it’s distraction free.
+    <span class="constant">manweb</span> is framework wich give to website a nice apparence of à UNIX manual displayed with a pager like <span class="externalCommand usermanual">less</span> or <span class="externalCommand usermanual">more</span>. So, it will be nice to use as home page for UNIX oriented project, especially terminal programs but it also could be used for serious technical documentation, because it’s distraction free.
     </p>
 
     <h1><a name="usage"></a><a href="#usage">Usage</a></h1>
     <p>
-    The most minimal code you have to put is:
+    The most minimal code you have to put on the html page header is:
     </p>
     <blockquote>
       <pre>
@@ -81,67 +81,155 @@
     <h2><a name="basictags"></a><a href="#basictags">Basic Tags</a></h2>
     <dl>
       <dt>
-      <span class="Function">&lt;</span><span class="Statement">h1</span><span class="Function">&gt;</span> to <span class="Function">&lt;</span><span class="Statement">h6</span><span class="Function">&gt;</span>
+      Heading
       </dt>
       <dd>
-      
+      <p>
+      The section’s <span class="Function">&lt;</span><span class="Statement">h1</span><span class="Function">&gt;</span> elements have the same redring than the TROFF’s <span class="Statement">.SH</span> command. It always display the title’s section at the top left and capitalize the text.<br />
+      So, the following HTML code:
+      </p>
+
+      <pre><!--
+   --><span class="Function">&lt;</span><span class="Statement">h1</span><span class="Function">&gt;</span><span class="Title">Diffie-Helman protocol</span><span class="Identifier">&lt;/</span><span class="Statement">h1</span><span class="Identifier">&gt;</span><br /><!--
+   --><span class="Function">&lt;</span><span class="Statement">p</span><span class="Function">&gt;</span>Lorem ipsum dolor sit amet et consectetur.<span class="Identifier">&lt;/</span><span class="Statement">p</span><span class="Identifier">&gt;</span><br />
+      </pre>
+
+      <p>
+      Will be have a rendering like this:
+      </p>
+      <blockquote>
+        <h1>Diffie-Helman protocol</h1>
+        <p>
+        Lorem ipsum dolor sit amet et consectetur.
+        </p>
+      </blockquote>
+
+
+      <p>
+      Note that others level section titles don’t display the text in top left but begin at five character width to the left side, as the TROFF’s <span class="Statement">.SS</span> command do.
+      </p>
+      <pre><!--
+   --><span class="Function">&lt;</span><span class="Statement">h1</span><span class="Function">&gt;</span><span class="Title">Diffie-Helman protocol</span><span class="Identifier">&lt;/</span><span class="Statement">h1</span><span class="Identifier">&gt;</span><br /><!--
+   --><span class="Function">&lt;</span><span class="Statement">h2</span><span class="Function">&gt;</span><span class="Title">How Alice meet Bob</span><span class="Identifier">&lt;/</span><span class="Statement">h2</span><span class="Identifier">&gt;</span><br /><!--
+   --><span class="Function">&lt;</span><span class="Statement">p</span><span class="Function">&gt;</span>Lorem ipsum dolor sit amet et consectetur.<span class="Identifier">&lt;/</span><span class="Statement">p</span><span class="Identifier">&gt;</span><br />
+      </pre>
+
+      <p>
+      Will be have a rendering like this:
+      </p>
+      <blockquote>
+        <h1>Diffie-Helman protocol</h1>
+        <h2>How Alice meet Bob</h2>
+        <p>
+        Lorem ipsum dolor sit amet et consectetur.
+        </p>
+      </blockquote>
+
+      <p>
+      The <span class="Function">&lt;</span><span class="Statement">small</span><span class="Function">&gt;</span> tag is also available in the heading tags and create a secondary text.
+      </p>
+      <pre><!--
+   --><span class="Function">&lt;</span><span class="Statement">h1</span><span class="Function">&gt;</span><span class="Title">Diffie-Helman protocol <span class="Function">&lt;</span><span class="Statement">small</span><span class="Function">&gt;</span><span class="Title">is better</span><span class="Identifier">&lt;/</span><span class="Statement">small</span><span class="Identifier">&gt;</span></span><span class="Identifier">&lt;/</span><span class="Statement">h1</span><span class="Identifier">&gt;</span><br /><!--
+   --><span class="Function">&lt;</span><span class="Statement">h2</span><span class="Function">&gt;</span><span class="Title">Explanations <span class="Function">&lt;</span><span class="Statement">small</span><span class="Function">&gt;</span><span class="Title">How it work</span><span class="Identifier">&lt;/</span><span class="Statement">small</span><span class="Identifier">&gt;</span></span><span class="Identifier">&lt;/</span><span class="Statement">h2</span><span class="Identifier">&gt;</span><br /><!--
+   --><span class="Function">&lt;</span><span class="Statement">p</span><span class="Function">&gt;</span>Lorem ipsum dolor sit amet et consectetur.<span class="Identifier">&lt;/</span><span class="Statement">p</span><span class="Identifier">&gt;</span><br />
+      </pre>
+
+      <blockquote>
+        <h1>Eliptic Curves <small>is better</small></h1>
+        <h2>Explanations <small>How it work</small></h2>
+        <p>
+        Lorem ipsum dolor sit amet et consectetur.
+        </p>
+      </blockquote>
       </dd>
 
       <dt>
-      <span class="Function">&lt;</span><span class="Statement">p</span><span class="Function">&gt;</span>
+      Body copy
       </dt>
       <dd>
-      
+        <p>
+        The section’s <span class="Function">&lt;</span><span class="Statement">p</span><span class="Function">&gt;</span> elements have the same redring than the TROFF’s <span class="Statement">.PP</span> command. It always display the title’s section at eight width characters from the left side.<br />
+        </p>
+      <pre><!--
+   --><span class="Function">&lt;</span><span class="Statement">h1</span><span class="Function">&gt;</span><span class="Title">Diffie-Helman protocol</span><span class="Identifier">&lt;/</span><span class="Statement">h1</span><span class="Identifier">&gt;</span><br /><!--
+   --><span class="Function">&lt;</span><span class="Statement">p</span><span class="Function">&gt;</span>This is the begining of the paragraph.<span class="Identifier">&lt;/</span><span class="Statement">p</span><span class="Identifier">&gt;</span><br />
+      </pre>
+
+      <p>
+      Will be have a rendering like this:
+      </p>
+      <blockquote>
+        <h1>Diffie-Helman protocol</h1>
+        <p>
+        This is the begining of the paragraph.
+        </p>
+      </blockquote>
       </dd>
 
       <dt>
-      <span class="Function">&lt;</span><span class="Statement">a</span><span class="Function">&gt;</span>
+      Links
       </dt>
       <dd>
-      
+        <p>
+        The default TROFF’s language haven’t a clickable words and didn’t bring any command, so, the links is litteraly displayed with no formating. But <span class="constant">manweb</span> come with two ways for displaying links.
+        </p>
+
+        <p>
+        The first one is the most similar to the TROFF’s way, it display the full link:
+        </p>
+
+	<pre>
+You can click on <span class="Function">&lt;</span><span class="Statement">a</span><span class="Function">  </span><span class="Type">class</span><span class="Function">=</span><span class="String">&quot;visible&quot;</span><span class="Function"> </span><span class="Type">href</span><span class="Function">=</span><span class="String">&quot;http://example.com&quot;</span><span class="Function">&gt;</span><span class="Underlined">http://example.com</span><span class="Identifier">&lt;/</span><span class="Statement">a</span><span class="Identifier">&gt;</span>
+	</pre>
+
+	<blockquote>
+	You can click on <a  class="visible" href="http://example.com">http://example.com</a>
+	</blockquote>
+
+	<p>
+	The other way didn’t exist at all on TROFF, but it’s inspired from the vim’s documentation system. It display the label betwean two pipe (|).
+	</p>
+
+	<pre>
+<span class="Function">&lt;</span><span class="Statement">a</span><span class="Function"> </span><span class="Type">class</span><span class="Function">=</span><span class="String">&quot;displayedLink&quot;</span><span class="Function"> </span><span class="Type">href</span><span class="Function">=</span><span class="String">&quot;http://example.com&quot;</span><span class="Function">&gt;</span><span class="Underlined">Click here</span><span class="Identifier">&lt;/</span><span class="Statement">a</span><span class="Identifier">&gt;</span>
+	</pre>
+
+	<blockquote>
+	<a class="displayedLink" href="http://example.com">Click here</a>
+	</blockquote>
+
       </dd>
 
       <dt>
-      <span class="Function">&lt;</span><span class="Statement">ul</span><span class="Function">&gt;</span>
+      Lists
       </dt>
       <dd>
-      
+        <dl>
+          <dt>
+          <span class="Function">&lt;</span><span class="Statement">ul</span><span class="Function">&gt;</span>
+          </dt>
+          <dd>
+          TODO
+          </dd>
+
+          <dt>
+          <span class="Function">&lt;</span><span class="Statement">ol</span><span class="Function">&gt;</span>
+          </dt>
+          <dd>
+          TODO
+          </dd>
+        </dl>
       </dd>
 
       <dt>
-      <span class="Function">&lt;</span><span class="Statement">ol</span><span class="Function">&gt;</span>
+      Description
       </dt>
       <dd>
-      
+        <p>
+        TODO
+        </p>
       </dd>
 
-      <dt>
-      <span class="Function">&lt;</span><span class="Statement">li</span><span class="Function">&gt;</span>
-      </dt>
-      <dd>
-      
-      </dd>
-
-      <dt>
-      <span class="Function">&lt;</span><span class="Statement">dl</span><span class="Function">&gt;</span>
-      </dt>
-      <dd>
-      
-      </dd>
-
-      <dt>
-      <span class="Function">&lt;</span><span class="Statement">dt</span><span class="Function">&gt;</span>
-      </dt>
-      <dd>
-      
-      </dd>
-
-      <dt>
-      <span class="Function">&lt;</span><span class="Statement">dd</span><span class="Function">&gt;</span>
-      </dt>
-      <dd>
-      
-      </dd>
 
     </dl>
     <h2><a name="formating"></a><a href="#formating">Formating</a></h2>
@@ -288,14 +376,21 @@
     <h2><a name="class"></a><a href="#class">Class</a></h2>
     <dl>
       <dt>
-      <span class="Function">externalCommand</span>
+      <span class="Function">.externalCommand</span>
       </dt>
       <dd>
       
       </dd>
 
       <dt>
-      <span class="Function">constant</span>
+      <span class="Function">.constant</span>
+      </dt>
+      <dd>
+      
+      </dd>
+
+      <dt>
+      <span class="Function">.displayedLink</span>
       </dt>
       <dd>
       
@@ -306,12 +401,12 @@
 
     <h1><a name="seeAlso"></a><a href="#seeAlso">See also</a></h1>
     <p>
-    <span class="externalCommand">BOOTSTRA.386(3)</span> at <a href="https://kristopolous.github.io/BOOTSTRA.386/">&lt;https://kristopolous.github.io/BOOTSTRA.386/&gt;</a>
+    <span class="externalCommand programmermanual">BOOTSTRA.386</span> at <a  class="visible" href="https://kristopolous.github.io/BOOTSTRA.386/">https://kristopolous.github.io/BOOTSTRA.386/</a>
     </p>
 
     <h1><a name="author"></a><a href="#author">Author</a></h1>
     <p>
-    The mayor part of <span>manweb</span> is writen by Fauve (aka Idriss al Idrissi) <a href="http://taniere.info">&lt;http://taniere.info&gt;</a> and could be find in Github at <a href="https://github.com/FauveNoir/manweb/">&lt;https://github.com/FauveNoir/manweb/&gt;</a>.
+    The mayor part of <span>manweb</span> is writen by Fauve (aka Idriss al Idrissi) <a class="visible" href="http://taniere.info">http://taniere.info</a> and could be foud on Github at <a class="visible" href="https://github.com/FauveNoir/manweb/">https://github.com/FauveNoir/manweb/</a>.
     </p>
     </article>
     <footer>
