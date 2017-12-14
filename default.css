@@ -172,11 +172,15 @@ footer > div
 footer > div:first-of-type
 {
 	text-align: left;
+	position: absolute;
+	left: 0;
 }
 
 footer > div:last-of-type
 {
 	text-align: right;
+	position: absolute;
+	right: 0;
 }
 
 footer > div:nth-of-type(2)

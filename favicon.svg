@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="44.993931"
+   height="45.002552"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="favicon.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="5.6"
+     inkscape:cx="-26.999031"
+     inkscape:cy="35.202302"
+     inkscape:document-units="px"
+     inkscape:current-layer="g3023"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1916"
+     inkscape:window-height="1039"
+     inkscape:window-x="0"
+     inkscape:window-y="39"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-183.00121,-143.98436)">
+    <g
+       id="g3023"
+       transform="matrix(0.28140015,0,0,0.28295158,147.67047,119.3786)">
+      <rect
+         ry="11.575013"
+         y="86.967209"
+         x="125.54018"
+         height="159.03781"
+         width="159.91463"
+         id="rect3775"
+         style="fill:#121212;fill-opacity:1;stroke:none" />
+      <flowRoot
+         transform="matrix(2.0593598,0,0,2.0593598,47.846815,-232.1448)"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:89.99999762%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Anonymous Pro;-inkscape-font-specification:Anonymous Pro Bold"
+         id="flowRoot2985"
+         xml:space="preserve"><flowRegion
+           id="flowRegion2987"><rect
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:89.99999762%;fill:#ffffff;fill-opacity:1;font-family:Anonymous Pro;-inkscape-font-specification:Anonymous Pro Bold"
+             y="155.21933"
+             x="45.714287"
+             height="442.85712"
+             width="715.71429"
+             id="rect2989" /></flowRegion><flowPara
+           style="line-height:89.99999762%;fill:#ff2887;fill-opacity:1"
+           id="flowPara3005">man</flowPara><flowPara
+           style="line-height:89.99999762%;fill:#af5fff;fill-opacity:1"
+           id="flowPara3041"><flowSpan
+             style="fill:#c58cff;fill-opacity:1"
+             id="flowSpan3757">web </flowSpan></flowPara></flowRoot>    </g>
+  </g>
+</svg>
